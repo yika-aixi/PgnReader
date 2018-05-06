@@ -56,6 +56,8 @@ namespace CChessCore.Pgn
         /// </summary>
         public int BufferSize { get; protected set; }
 
+        public IList<PgnGame> Games => _games;
+
         public PgnGame CurrentGame { get; set; }
 
         public  static IEnumerable<string> Results = new string[] { "1-0", "0-1", "1/2-1/2", "*" };        
